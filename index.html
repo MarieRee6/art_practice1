@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <title>Кинотеатр под водой</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="logo" alt="logo" src="src/img/logo.png">
+            <a href="#">Новости</a>
+            <a href="#">Афиша</a>
+            <a href="#">Покупка</a>
+        </nav>
+    </header>
+    <main class="middle">
+        <section class="news">
+            <h1>Новости</h1>
+            <div class="container">
+                <div class="left_block">
+                    <img class="first_level" alt="Nolan" src="src/img/nolan.png">
+                    <div class="caption_first_level">
+                        <div class="text">
+                            Нолан — гений (теперь официально),
+                        </div>
+                        <div class="text">
+                            «Оппенгеймер» впереди всех.
+                        </div>
+                        <div class="text">
+                            «Оскар-2024», как это было
+                        </div>
+                    </div>
+                </div>
+                <div class="right_block">
+                    <img class="second_level" alt="Bradly" src="src/img/bradly.png">
+                    <img class="second_level" alt="Картинка" src="src/img/truecrime.png">
+                    <img class="second_level" alt="Картинка" src="src/img/emma.png">
+                </div>
+                <div class="caption_second_level">
+                    <div class="content_one">
+                        <div class="text">
+                            Брэдли Купер остался с носом, а Киллиан
+                        </div>
+                        <div class="text">
+                            Мерфи наконец-то едет домой с наградой:
+                        </div>
+                        <div class="text">
+                            победители «Оскара-2024»
+                        </div>
+                    </div>
+                    <div class="content_two">
+                        <div class="text">
+                            Как устроен «Настоящий детектив»?
+                        </div>
+                    </div>
+                    <div class="content_three">
+                        <div class="text">
+                            Почему Эмма Стоун получила оскар?
+                        </div>
+                </div>
+                </div>
+        </section>
+
+        <section class="posters">
+            <h1> Афиша </h1>
+            <div class="posters_top">
+                <img class="" alt="film poster" src="src/img/posters/led3.png">
+                <img class="" alt="film poster" src="src/img/posters/adamAndEva.png">
+                <img class="" alt="film poster" src="src/img/posters/passenger.png">
+                <img class="content" alt="film poster" src="src/img/posters/MasterAndMargarita.png">
+                <img class="content" alt="film poster" src="src/img/posters/love.png">
+                <img class="content" alt="film poster" src="src/img/posters/onegin.png">
+                <img class="content" alt="film poster" src="src/img/posters/fish.png">
+                <img class="content" alt="film poster" src="src/img/posters/trigger.png">
+                <img class="content" alt="film poster" src="src/img/posters/translator.png">
+                <img class="content" alt="film poster" src="src/img/posters/knives.png">
+            </div>
+            <div class="posters_bottom">
+                <img class="content" alt="film poster" src="src/img/posters/topi.png">
+                <img class="content" alt="film poster" src="src/img/posters/emotions.png">
+                <img class="content" alt="film poster" src="src/img/posters/101.png">
+            </div>
+
+        </section>
+
+        <section class="buy">
+            <h1> Покупка билета </h1>
+            <form action="submit" method="post">
+                <label for="name">ФИО</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Почта</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Телефон</label>
+                <input type="text" id="phone" name="phone" pattern="[0-9+ ]+" required>
+
+                <label for="message">Комментарий</label>
+                <textarea id="message" name="comment" rows="3"></textarea>
+
+                <input class="button" type="submit" value="Отправить">
+                <input class="button" type="reset" value="Очистить">
+            </form>
+        </section>
+
+        <footer>
+            <a>Кинотеатр "Прилив"</a>
+            <a>Улица Большая Покровская 9А</a>
+            <a>+7(950)470-60-27</a>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>

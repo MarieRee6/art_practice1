@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'CoFo Sans';
+    src: local('CofoSans-Bold'), url('../fonts/CoFoSans-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 100 700;
+}
+
+:root {
+    --background-color-secondary: rgba(151, 248, 230, 1);
+    --text-color-main: rgba(29, 125, 179, 1);
+    --background-color-main: rgba(143, 215, 255, 1);
+    --main-font: CoFo Sans, sans-serif;
+    --caption-first-size: 18px;
+    --caption-second-size: 12px;
+    --header-size: 32px;
+    --footer-size: 16px;
+    --main-weight: 700;
+
+}
+
+header {
+    width: 100%;
+    height: 85px;
+    font-size: var(--header-size);
+    font-weight: var(--main-weight);
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+
+.logo {
+    width: auto;
+    height: auto;
+}
+
+.button {
+    color: var(--text-color-main);
+    font-family: var(--main-font);
+    font-weight: var(--main-weight);
+    text-align: center;
+    background-color: var(--background-color-secondary);
+    border-radius: 10px;
+    font-size: var(--footer-size);
+    height: 47px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.button:hover {
+    background-color: rgb(134, 219, 204);
+}
+
+.button:active {
+    color: var(--background-color-secondary);
+    background-color: var(--text-color-main);
+}
+
+.news {
+    width: 100%;
+    padding-bottom: 150px;
+    background: rgba(143, 215, 255, 1);
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "b b a";
+    margin-left: 400px;
+    margin-right: 500px;
+    width: auto;
+}
+
+.right_block {
+    display: flex;
+    flex-direction: column;
+}
+
+.first_level {
+    width: 573px;
+    height: 639px;
+}
+
+.caption_first_level {
+    font-size: var(--caption-first-size);
+    margin-top: -200px;
+    margin-left: 20px;
+    z-index: 1;
+}
+
+.text {
+    line-height: 25px;
+}
+
+.caption_second_level {
+    font-size: var(--caption-second-size);
+    z-index: 1;
+    position: absolute;
+    right: 550px;
+}
+
+.content_one {
+    margin-top: 90px;
+}
+
+.content_two {
+    margin-top: 150px;
+}
+
+.content_three {
+    margin-top: 150px;
+}
+
+.caption_first_level, .caption_second_level {
+    color: var(--background-color-secondary);
+    font-family: var(--main-font);
+    font-weight: var(--main-weight);
+
+}
+
+h1 {
+    color: var(--text-color-main);
+    background-color: var(--background-color-secondary);
+    font-family: var(--main-font);
+    font-size: var(--header-size);
+    font-weight: var(--main-weight);
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    padding-top: 20px;
+}
+
+.posters_top {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(5, 1fr);
+    grid-row-gap: 47px;
+    justify-items: center;
+    align-content: space-around;
+    width: 100%;
+    padding-top: 118px;
+}
+
+.posters_bottom {
+    margin-top: 47px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 47px;
+    justify-items: center;
+    align-content: space-around;
+    width: 100%;
+    padding-bottom: 120px;
+}
+
+.second_level {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+}
+
+footer {
+    height: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-weight: var(--main-weight);
+    font-size: var(--footer-size);
+}
+
+form {
+    margin-left: 34%;
+    margin-right: 34%;
+    width: auto;
+    padding-bottom: 75px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    display: list-item;
+    margin-bottom: 10px;
+    font-size: var(--footer-size);
+    width: 100%;
+    border: none;
+}
+
+input {
+    border: none;
+}
+
+label {
+    font-family: var(--main-font);
+    color: var(--text-color-main);
+    font-weight: var(--main-weight);
+    font-size: var(--header-size);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color-main);
+    font-family: var(--main-font);
+    font-weight: var(--main-weight);
+    text-align: center;
+}
+
+footer,
+nav {
+    background: var(--background-color-secondary);
+    width: 100%;
+    display: grid;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+}
+
+.news,
+.posters,
+.buy {
+    background-color: var(--background-color-main);
+    width: 100%;
+}
